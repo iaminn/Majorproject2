@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- Title of the document -->
+  <title>Validation Form</title>
+  <!-- Usage of bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  
+
+<!-- HTML code to write the content of the form -->
+ 
+</head>
+  
+  <body>
+  <div class="container mt-4">
+    <h2>Registration Form</h2>
+  </div> 
+    <div class="sub-headings">
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" name="name" id="name">
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" class="form-control" name="dob" id="dob">
+        <small class="error" id="dobError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" name="email" id="email">
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="form-control" name="phone" id="phone">
+        <small class="error" id="phoneError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" name="password" id="password">
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select class="form-control" name="course" id="course">
+          <option value="">Select a course</option>
+          <option value="course1">Full Stack Web Development</option>
+          <option value="course2">Artificial Intelligence</option>
+          <option value="course3">Machine Learning</option>
+          <option value="course4">Ethical Hacking</option>
+        </select>
+        <small class="error" id="courseError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea class="form-control" name="address" id="address"></textarea>
+        <small class="error" id="addressError"></small>
+      </div>
+      <div class="button">
+      <button type="submit" class="btn btn-secondary">Register</button>
+      </div>    
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+                <!-- End of code -->
+ <!-- I hope you will be satisfied with my project -->
